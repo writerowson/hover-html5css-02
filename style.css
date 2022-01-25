@@ -1,0 +1,199 @@
+/* by * command I can give cmd whole webpage */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Don't Use pX as image size */
+img{
+
+    width: 100% ;
+    display: block;
+
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Poppins&family=Raleway:wght@500;700&family=Rubik:ital@1&display=swap');
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: rgb(14, 13, 13);
+}
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+.banner{
+    display: flex;
+    height: 100vh;
+    /* vh will give the same hight of page */
+}
+.banner-left{
+    flex:1;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.banner-right{
+    flex:1;
+    display: flex;
+    align-items: center;
+    
+}
+.banner-right img{
+    width: 600px ;
+
+}
+.banner-title{
+    font-size: 60px;
+    white-space: nowrap;
+    position: relative;
+}
+.banner-title::before{
+    content: 'Programming Hero';
+    position: absolute;
+    top: 0;
+    left:0;
+    color:aqua;
+    animation:backwards 3s ease-in-out;
+    animation: typing 10s linear infinite;
+}
+@keyframes typing{
+    0%{
+        content:  'P|'
+    }
+    4%{
+        content: 'Pr|'
+    }
+    8%{
+        content: 'Pro|'
+    }
+    12%{
+        content: 'Prog|'
+    }
+    16%{
+        content: 'Progr|'
+    }
+    20%{
+        content: 'Progra|'
+    }
+    24%{
+        content: 'Program|'
+    }
+    28%{
+        content: 'Programm|'
+    }
+    32%{
+        content: 'Programmi|'
+    }
+    36%{
+        content: 'Programmin|'
+    }
+    40%{
+        content: 'Programming|'
+    }
+    44%{
+        content: 'Programming |'
+    }
+    50%{
+        content: 'Programming H|'
+    }
+    54%{
+        content: 'Programming He|'
+    }
+    60%{
+        content: 'Programming Her|'
+    }
+    64%{
+        content: 'Programming Hero|'
+    }
+    83%{
+        content: 'Programming Hero|'
+    }
+    84%{
+        content: 'Programming Her|'
+    }
+    85%{
+        content: 'Programming He|'
+    }
+    86%{
+        content: 'Programming H|'
+    }
+    87%{
+        content: 'Programming |'
+    }
+    88%{
+        content: 'Programming|'
+    }
+    89%{
+        content: 'Programmin|'
+    }
+    90%{
+        content: 'Programmi|'
+    }
+    91%{
+        content: 'Programm|'
+    }
+    92%{
+        content: 'Program|'
+    }
+    93%{
+        content: 'Progra|'
+    }
+    94%{
+        content: 'Progr|'
+    }
+    95%{
+        content: 'Prog|'
+    }
+    96%{
+        content: 'Pro|'
+    }
+    97%{
+        content: 'Pr|'
+    }
+    98%{
+        content: 'P|'
+    }
+    99%{
+        content: 'P|'
+    }
+    100%{
+        content: '|'
+    }
+
+}
+
+.photo{
+    width: 280px;
+    height: 280px;
+    position: relative;
+}
+.photo img{
+    width: 100%;
+    height: 100%;
+
+    /* the img match by not strach */
+    object-fit: cover;
+}
+h1{
+    color: white;
+}
+.border{
+    background-color: white;
+    position: absolute;
+}
+.border .top .bottom{
+height: 4px;
+width: 270px;
+}
+.border .left .right{
+    height: 270px;
+    width: 4px;
+}
+.border .top{
+    top: 5px;
+    left: 5px;
+    }
+    .border .left{
+        bottom: 5px;
+        left: 5px;
+    }
